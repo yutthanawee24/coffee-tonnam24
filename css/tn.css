@@ -1,0 +1,123 @@
+/* รีเซ็ตหน้าจอ */
+*{
+    margin: 0; /* ขอบ บน ล่าง ซ้าย ขวา */
+    padding: 0; /* ระยะห่าง บน ล่าง ซ้าย ขวา */
+    box-sizing: border-box; /* กำหนดให้เป็นกล่อง */
+}
+
+/* CSS กล่องที่ 1 */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: bisque;
+
+}
+
+/* กำหนดกล่อง logo และ link a */
+.logo a{
+    text-decoration: none;
+    color: rgb(52, 17, 1);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* กำหนด กล่องเมนู  */
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+/* กำหนด กล่องเมนู ย่อย li */
+.menu li {
+    margin-left: 20px;
+}
+
+/* กำหนด กล่องเมนู ย่อย li  a */
+.menu li a {
+    text-decoration: none;
+    color: #301d02d2;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* กำหนด กล่องที่ 2  Class banner */
+.banner {
+    background-color: #c99858;
+    color: rgb(85, 38, 27);
+    height: 500px; /* ความสูง */
+    /* จัดตำแหน่งรูปภาพด้วย flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* ใช้เป็นชุด ร่วมกัน 3 คำสั่งนี้ จัดกึ่งกลางแนวนอน แนวตั้ง */
+}
+
+.banner h1 {
+    margin-top: 10px;
+    color: #00ffff;
+}
+
+
+.banner-info{
+    text-align: center; /* จัดกึ่งกลางแนวตั้ง */
+}
+
+
+/* เข้าถึงการปรับขนาดรูปภาพ */
+.banner-info img{
+    width: 400px;
+    border-radius: 100%; /* ทำเป็นมุมมน */
+}
+
+.banner-info p{
+    background-color: bisque;
+    color: rgb(175, 2, 255);
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+/* กำหนด css กล่องที่ 3*/
+ /* จัดการแสดงหน้าจอแบบหน้าจอแบบคอลัมน์ */
+main{
+    display: grid;  /* แสดงผลแบบคอลัมน์ */
+    grid-template-columns: 1fr 1fr 1fr; /* กำหนด 3 คอลัมน์ */
+}
+
+main div{
+    padding: 20px;
+}
+ 
+main div p{
+    margin-top: 10px ;
+    padding: 0.5rem;
+}
+.p01 img{
+border-radius: 20px;  /* กำหนดขอบโค้งมน รูปภาพ 1 */
+}
+
+.p02 img{
+    border-radius: 20px;  /* กำหนดขอบโค้งมน รูปภาพ 2 */
+    }
+
+.p03 img{
+    border-radius: 20px;  /* กำหนดขอบโค้งมน รูปภาพ 3 */
+     }
+
+
+main img{
+    width: 100%; /* กำหนดความกว้างรูปภาพ */
+    border-radius: 200px;  /* กำหนดขอบโค้งมน รูปภาพ */
+}
+
+
+
+/* กำหนด footer */
+footer{
+    background-color: rgb(218, 168, 77);
+    color: azure;
+    padding: 20px;
+    text-align: center;
+}
+
